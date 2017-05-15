@@ -24,13 +24,17 @@
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0
  */
+
+// Custom post types function 
+// create a case study custom post type
+
 function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
             'labels' => array(
                 'name' => __( 'Case Studies' ),
                 'singular_name' => __( 'Case Study' )
-            ,
+            ),
             'public' => true,
             'has_archive' => true,
             'rewrite' => array( 'slug' => 'case-studies' ),
